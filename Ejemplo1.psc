@@ -14,11 +14,7 @@ Algoritmo Positivo_negativo
 		Si (N<0)
 			Escribir " Es negativo: " N
 		SiNo
-			Si (N=0)
-				Escribir " Es nulo: " N
-			
-			FinSi
-			
+			Escribir " Es nulo: " N
 		FinSi
 		
 	Fin Si

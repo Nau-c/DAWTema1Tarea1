@@ -7,7 +7,7 @@ Algoritmo Suma_100_primero_numero
 	sumar<-0
 	contador<-1
 	Mientras contador<=100 Hacer
-		sumar=sumar + contador //tomamos la variable contador almacenada en contador y le decimos que nos haga la suma de de lso 100 primeros números
+		sumar= sumar + contador //tomamos la variable contador almacenada en contador y le decimos que nos haga la suma de de lso 100 primeros números
 		contador= contador + 1 //Realizamos que el contador salga del bucle sumandole 1 una vez llegue a 100
 	Fin Mientras
 	Escribir "La suma de los números del 1 al 100: "

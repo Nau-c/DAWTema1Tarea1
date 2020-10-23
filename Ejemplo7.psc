@@ -4,27 +4,70 @@ Algoritmo orden_ascendente_manteniendo_ABC
 //orden ascendente. Pero ordenados siempre A;B y C teniendo que permutar sus valores si
 //fuese necesario.	
 	
-	Definir N1, N2, N3, X Como real
+	Definir n1, n2, n3, A, B, C Como Real
 	
-	Escribir "Introduzca 3 número para su orden ascendente pero ordenados siempre A,B,c"
-	Leer N1, N2, N3 
-	
-	Si N1<N2 Entonces
-		X<-N1
+	Escribir "Introduzca 3 número para su orden ascendente pero ordenados siempre A,B,C"
+	Leer n1, n2, n3 
+
+	Si n1<n2 Entonces   //anidamos las condciones 
+		Si n1<n3 Entonces
+			Si n2<n3 Entonces
+				A<-n1
+				B<-n2
+				C<-n3
+				
+				Escribir A
+				Escribir B
+				Escribir C
+			SiNo
+				 A<-n1
+				 B<-n3
+				 C<-n2
+				
+				Escribir A
+				Escribir B
+				Escribir C
+			FinSi
+		SiNo 
+			A<-n3
+			B<-n1
+			C<-n2
+			
+			Escribir A
+			Escribir B
+			Escribir C
+			
+		FinSi
 	SiNo
-	     X<-N2
-	 FinSi
-	 Si X<N3 Entonces
-		 X<-X
-	 SiNo
-		 X<-3
-		 
-	 FinSi
-	 
-	 Escribir " Orden ascendente manteniendo orden A B C " 
-	 Escribir N3
-	 Escribir N2
-	 Escribir N1
+		Si n2<n3 Entonces
+			Si n3<n1 Entonces
+				A<-n2
+				B<-n3
+				C<-n1
+				
+				Escribir A
+				Escribir B
+				Escribir C
+				
+			SiNo
+				A<-n2
+				B<-n1
+				C<-n3
+				
+				Escribir A
+				Escribir B
+				Escribir C
+			FinSi
+		SiNo
+			A<-n3
+			B<-n2
+			C<-n1
+			
+			Escribir A
+			Escribir B
+			Escribir C
+		FinSi
+	FinSi
 	
 	
 FinAlgoritmo
